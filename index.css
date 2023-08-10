@@ -1,0 +1,30 @@
+/*Importacion de mis estilos especiales de cada seccion*/
+@import url(./styles/header/header.css);
+@import url(./styles/main/main.css);
+
+
+
+:root {
+    /*Fuentes que se utilizaran*/
+    --titulos-primarios: 'Old Standard TT';
+    --titulos-secundarios: 'Merriweather';
+    --subtitulos:'Lora';
+    --parrafos:'Libre Baskerville';
+    --enlaces: 'Playfair';
+    /*Colores de parrafos, y fondos*/
+    --primary-color-title: #2C3E50;
+    --acentos-primario:#3498DB;
+    --secondary-acent: #E74C3C ;
+    --enlaces-color:#175179;
+    --background-img:#A6A6A6;
+    --separador: #D5DBDB;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow: hidden;
+}
+body{
+    padding: 0;
+    margin: 0;
+}

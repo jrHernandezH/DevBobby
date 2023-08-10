@@ -1,0 +1,129 @@
+#main-home{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    overflow: scroll;
+}
+.preview-photos{
+    width: 100%;
+    height: 300px;
+    background: var(--background-img);
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+.preview-photos  img{
+    width: 80%;
+    height: 90%;
+    object-fit: cover;
+    object-position:  center ;
+    mix-blend-mode: luminosity;
+    box-shadow: 10px 7px 5px 0px rgba(0, 0, 0, 0.51);
+}
+
+#personal-container{
+    margin: 0 auto;
+    width: 60%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.personal-information{
+    width: 266px;
+    height: 200px;
+    display: grid;
+}
+
+.personal-information span{
+    color: var(--separadaor);
+    font-family: var(--subtitulos);
+    font-size: 20px;    
+    font-weight: 700;
+}
+.personal-information h2{
+    margin: 0;
+    font-family: var(--titulos-secundarios);
+    font-size: 30px;
+    font-weight: 600;
+}
+.text-animation {
+    width: 100%;
+    height: 22px;
+    font-family: var(--subtitulos);
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+.welcome {
+    font-family: var(--parrafos);
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 600;
+    margin: 0;
+}
+.my-photo{
+    width: 343px;
+    height: 341px;
+    border-radius: 10px;
+    filter: grayscale(100);
+    box-shadow: 5px 2px 5px 0px rgba(0, 0, 0, 0.51);
+}
+.my-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*diseño respnsivo para movile*/
+@media (max-width: 767px) {
+    .preview-photos{
+        width: 100%;
+        height: 200px;
+        background: var(--background-img);
+        display: grid;
+        place-items: center;
+        margin: 0;
+    }
+    #personal-container{
+        margin: 10px auto 2px;
+        padding: 10px;
+        width: 100%;
+        height: max-content;
+        display: grid;
+        grid-template-columns: auto;
+        grid-row: auto auto;
+        justify-items: center;
+
+    }
+    .personal-information{
+        width: max-content;
+        height: 150px;
+        display: grid;
+    }
+    .my-photo{
+        width: 250px;
+        height: 255px;
+        border-radius: 10px;
+        filter: grayscale(100);
+        box-shadow: 5px 2px 5px 0px rgba(0, 0, 0, 0.51);
+        margin: 0;
+    }
+    .my-photo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    #personal-container{
+        margin: auto;
+        width: 100%;
+    }
+}
