@@ -2,7 +2,9 @@ import { typeText } from './js/animations/text.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    typeText();
+    if (document.getElementById('typingText')) {
+        typeText();
+    }
 
     const checkbox = document.getElementById("burger");
     const nav = document.getElementById("nav");

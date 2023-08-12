@@ -17,7 +17,7 @@
     />
     <title>|Hugo Hernandez|</title>
     <!--link general de inicio de mis estilos-->
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../index.css">
     <!--Links de estilos externos u iconos-->
     <link
     rel="stylesheet"
@@ -34,8 +34,8 @@
     <header id="header">
         <h1 class="title">DEV || BOBBY</h1>
         <nav id="nav">
-            <a href="./index.html">Home</a>
-            <a href="./pages/about.html">About</a>
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About</a>
             <a href="">Portfolio</a>
             <a href="">Blog</a>
         </nav>
@@ -53,35 +53,27 @@
           <span></span>
         </label>
     </header>
-    <main class="main-home">
-      <!--Contenedor para mostrar fotos de mis equipos-->
-          <figure class="preview-photos">
-            <img
-              src="./assets/prueba2.jpg"
-              alt="prueba de foto de equipo"
-            />
-         </figure>
-         <!--Artitulo para redactar y resumer quien soy que hago y a que me dedico-->
-         <article id="personal-container">
-            <div class="personal-information">
-              <span>Hello World, I'm</span>
-              
-              <h2>Hugo Hernandez</h2>
-              
-              <div class="text-animation" id="typingText"></div>
-
-              <p class="welcome"
-                >Welcome to My personal website
-              </p>
-            </div>
-            <figure class="my-photo">
-              <img
-                src="./assets/prueba.png"
-                alt="I'm"
-              />
-            </figure>
-          </article>
+    <main class="main-about">
+      <!--Contenedor para mostrar las tecnologias que conozco-->
+      <div class="list-skills">
+        <div class="skills-wrapper" id="ticker-content">
+            <span>FrontEnd</span>
+            <span>Html</span>
+            <span>Css</span>
+            <span>Bootstrap</span>
+            <span>Sass</span>
+            <span>Js</span>
+            <span>Vue</span>
+            <span>React</span>
+            <span>Angular</span>
+            <span>MongoDB</span>
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+          </div>
+      </div>
+          
     </main>
-    <script type="module" src="./index.js"></script>
+    <script src="../js/animations/tiker.js"></script>
+    <script type="module" src="../index.js"></script>
   </body>
 </html>

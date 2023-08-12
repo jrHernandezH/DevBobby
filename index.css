@@ -1,6 +1,8 @@
 /*Importacion de mis estilos especiales de cada seccion*/
 @import url(./styles/header/header.css);
 @import url(./styles/main/main.css);
+@import url(./styles/main/main-about.css);
+
 
 
 
@@ -18,11 +20,11 @@
     --enlaces-color:#175179;
     --background-img:#A6A6A6;
     --separador: #D5DBDB;
+    --separador-osc: #b4b4b4;
 }
 *{
     box-sizing: border-box;
     text-decoration: none;
-    overflow: hidden;
 }
 body{
     padding: 0;

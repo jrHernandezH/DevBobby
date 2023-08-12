@@ -56,10 +56,11 @@
     color: #fff; 
 }
 /*estilo del icono del menu*/
-#burguer{display: none;}
+#menu{display: none;}
 
 /*Diseños responsivos para movile*/
 @media (max-width: 767px) {
+    #menu{display: block;}
     #header{
         grid-template-columns: auto auto auto;
     }
