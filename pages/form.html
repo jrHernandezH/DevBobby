@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Form from projects</title>
+    <link rel="stylesheet" href="../styles/form/form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-container" id="card-preview">
+        <div class="card">
+          <figure class="card-header">
+            <img
+              src="https://jrhernandezh.github.io/Frontend/card-product/design/desktop-design.jpg"
+              alt="imagen de prueba"
+              id="img-preview-card"
+            />
+          </figure>
+          <div class="card-body">
+            <h1 class="title-card" id="title-preview-card"
+              >Titulo del proyecto</h1
+            >
+            <p
+              class="description"
+              id="description-preview-card"
+              >Descripcion del proyecto lorem, ipsum dolor
+              sit amet consectetur adipisicing elit.
+              Impedit, saepe neque? Officiis dicta
+              exercitationem non impedit accusantium alias
+              nesciunt iusto.</p
+            >
+            <button class="btn btn-primary">View</button>
+          </div>
+        </div>
+      </div>
+      <div class="container-form">
+        <form action="" class="form" id="projects">
+          <label for="title">Title</label>
+          <input type="text" id="title" required />
+          <label for="description">Description</label>
+          <textarea
+            id="description"
+            rows="5"
+            required
+          ></textarea>
+          <label for="github">Link from to github</label>
+          <input type="url" id="github" required />
+          <label for="view">Link of the view project</label>
+          <input type="url" id="view" required />
+          <label for="imgProject"
+            >Image of the project</label
+          >
+          <input type="url" id="imgProject" required />
+          <button class="btn" id="save">Save</button>
+        </form>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="../js/data/save-data.js"
+    ></script>
+    <script src="../js/util/restricciones.js"></script>
+  </body>
+</html>
