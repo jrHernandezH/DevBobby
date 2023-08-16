@@ -17,7 +17,7 @@ projectForm.addEventListener('submit', (e) => {
         description: description.value,
         github: github.value,
         view: view.value,
-        imgProject: imgProject.src
+        imgProject: imgProject.value
     }
     saveData(dataProject)
     projectForm.reset()

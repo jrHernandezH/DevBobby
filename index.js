@@ -1,26 +1,31 @@
-import { saveTask, getTasks, onGetTask, deleteTask, getTask, updateTask } from './js/data/firebase.js';
-const taskContainer = document.getElementById('task-container');
-const taskForm = document.getElementById('task-form');
-let editStatus = false;
-let id = '';
-window.addEventListener('DOMContentLoaded', async () => {
-    onGetTask((querySnapshot) => {
+import { onGetProjects } from './js/data/firebase.js';
 
-        let html = '';
+const main = document.getElementById('container-projects');
+
+
+window.addEventListener('DOMContentLoaded', async () => {
+    onGetProjects((querySnapshot) => {
+
+        let card = '';
         querySnapshot.forEach(doc => {
-            const task = doc.data()
-            const contenedor = document.getElementById('container-projects');
-            const card = document.createElement('div');
-            card.innerHTML = `<div class="max-w-sm rounded overflow-hidden shadow-lg">
-                                    <img class="w-full" src="ruta-de-la-imagen.jpg" alt="Proyecto 1">
-                                    <div class="px-6 py-4">
-                                    <div class="font-bold text-xl mb-2">${task.name}</div>
-                                    <p class="text-gray-700 text-base">
-                                        Descripción del proyecto que destaque sus características y objetivos.
-                                    </p>
-                                    </div>
-                                </div>`;
-            contenedor.appendChild(card);
+            const project = doc.data()
+            card += `
+            <div class="card">
+                <div class="card-header">
+                    <figure class="figure">
+                        <img src="${project.img}" class="figure-img img-fluid rounded">
+                    </figure>
+                </div>
+                <div class=card-body>
+                    <h1>${project.title}</h1>
+                    <p>${project.description}</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Button</button>
+                    </div>
+                </div>
+            </div>
+            `
         });
+        main.innerHTML = card;
     });
 });

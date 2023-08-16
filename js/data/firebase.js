@@ -31,7 +31,7 @@ export const saveData = (data) => {
 
 export const getTasks = () => getDocs(collection(db, "task"));
 
-export const onGetTask = (callback) => onSnapshot(collection(db, 'Credentials'), callback);
+export const onGetProjects = (callback) => onSnapshot(collection(db, 'projects'), callback);
 
 export const deleteTask = (id) => {
     deleteDoc(doc(db, 'task', id));
